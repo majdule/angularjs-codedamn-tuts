@@ -14,7 +14,16 @@
   <!-- ng-model dodeljuje vrednost unetu u input polje "varijabli" name i prosleđuje ga ng-bind-u -->
   <input type="text" ng-model="name">
   <!-- ng-bind uzima vrednost iz ng-model-a i ispisuje je u okviru elementa u kom je pozvan -->
-  <h3 class="message" ng-bind="name"></h3>
+  <h3 class="message">Hello {{name}}!</h3>
+
+  Your preferred language: <input type="text" ng-model="language">{{language}}
+
+  <div ng-init="myFavLan=[{name:'PHP',extension: '.php'},
+  {name:'Javascript', extension:'.js'},{name:'Ruby',extension:'.rb'}]"></div>
+
+  <ul>
+    <li ng-repeat="language in myFavLan">Name: {{language.name}}, extension: {{language.extension}}</li>
+  </ul>
 </body>
 
 </html>
