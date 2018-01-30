@@ -1,6 +1,7 @@
 <!DOCTYPE html>
-<!-- ng-app određuje na koji deo koda će se primenjivati angular, u ovom slučaju s obziorm da je na html elementu, primenjivaće se na ceo dokument -->
+<!-- ng-app atribut određuje na koji deo koda će se primenjivati angular, u ovom slučaju s obziorm da je na html elementu, primenjivaće se na ceo dokument -->
 <html lang="en" ng-app="">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,8 +9,12 @@
   <title>AngularJS - Codedamn</title>
   <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.7/angular.min.js"></script>
 </head>
+
 <body>
+  <!-- ng-model dodeljuje vrednost unetu u input polje "varijabli" name i prosleđuje ga ng-bind-u -->
   <input type="text" ng-model="name">
-  <h3 class="message">Hello {{name}}</h3>
+  <!-- ng-bind uzima vrednost iz ng-model-a i ispisuje je u okviru elementa u kom je pozvan -->
+  <h3 class="message" ng-bind="name"></h3>
 </body>
+
 </html>
