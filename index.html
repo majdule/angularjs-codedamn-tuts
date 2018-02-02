@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <!-- ng-app atribut određuje na koji deo koda će se primenjivati angular, u ovom slučaju s obziorm da je na html elementu, primenjivaće se na ceo dokument -->
-<html lang="en" ng-app="">
+<html lang="en" >
 
 <head>
   <meta charset="UTF-8">
@@ -10,14 +10,8 @@
   <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.7/angular.min.js"></script>
 </head>
 
-<body>
-  <span>Enter price: </span><input type="text" ng-model="price">
-
-  <p>The price is: {{price | currency:"€":3}}</p>
-
-  <script>
-    
-  </script>
+<body ng-app="">
+  <div ng-include="'dummy.html'"></div>
 </body>
 
 </html>
