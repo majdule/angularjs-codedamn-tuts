@@ -8,10 +8,14 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>AngularJS - Codedamn</title>
   <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.7/angular.min.js"></script>
+  <script src="angular-route.min.js"></script>
+  <script src="controller.js"></script>
 </head>
 
-<body ng-app="">
-  <div ng-include="'dummy.html'"></div>
+<body ng-app="mainApp">
+
+  <div ng-view></div>
+
 </body>
 
 </html>
