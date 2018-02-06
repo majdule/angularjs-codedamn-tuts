@@ -21,13 +21,17 @@
 </head>
 
 <body>
+
   <div ng-controller="peopleCtrl">
     <ul>
       <h2>Names And Age Of Programmers In The Local Area</h2>
 
-      <li ng-repeat="person in persons">
+      <input type="text" ng-model="searchBox">
+
+      <li ng-repeat="person in persons | filter:searchBox">
         {{ person.Name + ' : ' + person.Age }}
       </li>
+
     </ul>
   </div>
 </body>

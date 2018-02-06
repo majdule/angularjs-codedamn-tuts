@@ -8,4 +8,4 @@ app.controller('peopleCtrl', function ($scope, $http) {
   }).catch(function onError(response) {
     console.log("Error occured");
   })
-});
+}); 
