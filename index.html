@@ -26,9 +26,12 @@
     <ul>
       <h2>Names And Age Of Programmers In The Local Area</h2>
 
-      <input type="text" ng-model="searchBox">
+      <input type="text" ng-model="globalSearch.$" placeholder="Global Search">
+      <input type="text" ng-model="globalSearch.Name" placeholder="Search by name">
+      <input type="text" ng-model="globalSearch.Age"placeholder="Search by age">
+      <input type="text" ng-model="globalSearch.FavColor"placeholder="Search by favourite color">
 
-      <li ng-repeat="person in persons | filter:searchBox">
+      <li ng-repeat="person in persons | filter:globalSearch">
         {{ "Name: " + person.Name + ", Age: " + person.Age + ", Favourite color: " + person.FavColor }}
       </li>
 
