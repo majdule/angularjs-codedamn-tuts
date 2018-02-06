@@ -3,52 +3,52 @@
     {
       "Name": "Mehul",
       "Age": "18",
-      "Fav-color": "blue"
+      "FavColor": "blue"
     },
     {
       "Name": "Jai",
       "Age": "23",
-      "Fav-color": "green"
+      "FavColor": "green"
     },
     {
       "Name": "Alex",
       "Age": "27",
-      "Fav-color": "gold"
+      "FavColor": "gold"
     },
     {
       "Name": "Dule",
       "Age": "24",
-      "Fav-color": "red"
+      "FavColor": "red"
     },
     {
       "Name": "Giga",
       "Age": "23",
-      "Fav-color": "blue"
+      "FavColor": "blue"
     },
     {
       "Name": "Ivona",
       "Age": "23",
-      "Fav-color": "red"
+      "FavColor": "red"
     },
     {
       "Name": "Bogi",
       "Age": "23",
-      "Fav-color": "yellow"
+      "FavColor": "yellow"
     },
     {
       "Name": "Mina",
       "Age": "25",
-      "Fav-color": "blue"
+      "FavColor": "blue"
     },
     {
       "Name": "Perisa",
       "Age": "24",
-      "Fav-color": "pink"
+      "FavColor": "pink"
     },
     {
       "Name": "Anonymous",
       "Age": "???",
-      "Fav-color": "black"
+      "FavColor": "black"
     }
   ]
 }
