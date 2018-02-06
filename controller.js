@@ -1,32 +1,8 @@
-var app = angular.module('mainApp', ['ngRoute']);
+var app = angular.module('mainApp', []);
 
-app.config(function ($routeProvider) {
-  $routeProvider
-    .when('/', {
-      templateUrl: 'pages/login.html'
-    })
-    .when('/dashboard', {
-      resolve: {
-        "check": function ($location, $rootScope) {
-          if (!$rootScope.loggedIn) {
-            $location.path('/');
-          }
-        }
-      },
-      templateUrl: 'pages/dashboard.html'
-    })
-    .otherwise({
-      redirectTo: '/'
+app.controller('people', function ($scope, $http) {
+  $http.get('/database.json')
+    .success(function (response) {
+      $scope.persons = response.records;
     });
 });
-
-app.controller('loginCtrl', function ($scope, $location, $rootScope) {
-  $scope.submit = function () {
-    if ($scope.username == 'admin' && $scope.password == 'admin') {
-      $rootScope.loggedIn = true;
-      $location.path('/dashboard');
-    } else {
-      alert('Wrong credentials!')
-    }
-  }
-})
