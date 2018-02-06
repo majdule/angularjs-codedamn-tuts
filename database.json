@@ -2,43 +2,53 @@
   "records": [
     {
       "Name": "Mehul",
-      "Age": "18"
+      "Age": "18",
+      "FavColor": "blue"
     },
     {
       "Name": "Jai",
-      "Age": "23"
+      "Age": "23",
+      "FavColor": "green"
     },
     {
       "Name": "Alex",
-      "Age": "27"
+      "Age": "27",
+      "FavColor": "gold"
     },
     {
       "Name": "Dule",
-      "Age": "24"
+      "Age": "24",
+      "FavColor": "red"
     },
     {
       "Name": "Giga",
-      "Age": "23"
+      "Age": "23",
+      "FavColor": "blue"
     },
     {
       "Name": "Ivona",
-      "Age": "23"
+      "Age": "23",
+      "FavColor": "red"
     },
     {
       "Name": "Bogi",
-      "Age": "23"
+      "Age": "23",
+      "FavColor": "yellow"
     },
     {
       "Name": "Mina",
-      "Age": "25"
+      "Age": "25",
+      "FavColor": "blue"
     },
     {
       "Name": "Perisa",
-      "Age": "24"
+      "Age": "24",
+      "FavColor": "pink"
     },
     {
       "Name": "Anonymous",
-      "Age": "???"
+      "Age": "???",
+      "FavColor": "black"
     }
   ]
 }
