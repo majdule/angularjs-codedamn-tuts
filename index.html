@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <!-- ng-app atribut određuje na koji deo koda će se primenjivati angular, u ovom slučaju s obziorm da je na html elementu, primenjivaće se na ceo dokument -->
-<html lang="en" >
+<html lang="en" ng-app="mainApp">
 
 <head>
   <meta charset="UTF-8">
@@ -9,24 +9,27 @@
   <title>AngularJS - Codedamn</title>
   <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.7/angular.min.js"></script>
   <link rel="stylesheet" href="css/main.css">
-  <script src="controller.js"></script><!-- Latest compiled and minified CSS -->
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-  <!-- Latest compiled and minified JavaScript -->
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+  <script src="controller.js"></script>
+  <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+    crossorigin="anonymous">
   <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <!-- Latest compiled and minified JavaScript -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+    crossorigin="anonymous"></script>
 </head>
 
-<body ng-app="mainApp">
+<body>
+  <div ng-controller="peopleCtrl">
+    <ul>
+      <h2>Names And Age Of Programmers In The Local Area</h2>
 
-  <div ng-controller="people"></div>
-  <ul>
-    <h2>Names And Age Of Programmers In The Local Area</h2>
-    <li ng-repeat="person in persons">
-        {{ person.Name + ": " + person.Age }}
-    </li>
-  </ul>
-
+      <li ng-repeat="person in persons">
+        {{ person.Name + ' : ' + person.Age }}
+      </li>
+    </ul>
+  </div>
 </body>
 
 </html>
